@@ -1,0 +1,134 @@
+/* write css for root element */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* write css for body element */
+body{
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    /* add a theme background photo for the page */
+    background-image: url('https://images.unsplash.com/photo-1650802218122-a8de4e071a83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+
+/* write css for form element the form element will be in full height of the page and on the left half*/
+/* the all form elements should be in the left half of the page not more than that */
+form{
+    height: 95vh;
+    width: 50%;
+    background-color: linear-gradient(to right, #0d1114, #2980b9);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    float: left;
+}
+
+/* account-info div it should be on left side of the screen and also separated by margin from other components */
+
+.account-info{
+    width: 100%;
+    flex-direction: row;
+    background-color: linear-gradient(to right, #0d1114, #2980b9);
+    padding-bottom: 20px;
+}
+
+/* account info heading should be in left top of the box and inline element */
+
+.account-info h1{
+    display: inline;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* account info sub should be flex and contain two input fields */
+
+.account-info .account-info-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* make both input fit in single line and also make them inline element */
+
+.account-info .account-info-sub input{
+    display: inline;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.account-info .account-info-sub label{
+    display: inline;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+/* Add styling for the input element in form  */
+
+/* make the two buttons round from corners like semi circle and pretty big in size */
+
+form button{
+    /* increase the height of buttons */
+    height: 40px;
+    font-weight: 600;
+    border-radius: 50px;
+    width: 40%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* button should feel like actual press on click */ 
+
+form button:active{
+    transform: scale(0.95);
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* hidden class to hide the form */
+
+.hidden{
+    display: none;
+}
+
+/* create css for button after click to show that button is clicked */
+
+form button.clicked{
+    background-color: green;
+    color: #fff;
+}
+
+/* add css to a div having id addExpenseOrIncome to take all the half block of form element having it's text in centre of the box in big text */
+
+.show{
+    width: 90%;
+    height: 50vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    flex-direction: column;
+    /* add showdow and color to the box to differenetiate from other elements */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: linear-gradient(to right, #0d1114, #2980b9);
+}
+
+/* submit button css the position of submit should be fixed a on the centre of the form element */
+
+#submit{
+    position: fixed;
+    bottom: 2%;
+    left: 35%;
+    transform: translateX(-80%);
+    width: 15%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}

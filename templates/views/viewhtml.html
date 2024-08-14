@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Transaction</title>
+    <link rel="stylesheet" href="../../public/css/innertransactions.css">
+    <link rel="stylesheet" href="../../public/css/chatbot.css">
+  </head>
+  <body>
+   {{>header}}
+    <!-- Add one more box which is designed to display the history of transaction -->
+    <div class="container2">
+      <!-- Add a heading -->
+      <h1>Transaction History</h1>
+      <!-- Add a table to display the history of transaction -->
+
+<span class="message">
+    <div class="message-container">
+        <table>
+            <thead>
+            <tr>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Category</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each users}}
+            <tr>
+              <td>{{this.date}}</td>
+              <td>{{this.amount}}</td>
+              <td>{{this.category}}</td>
+              <td>{{this.description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+      </table>
+    </div>
+</span>    
+</div>
+    <div class="image">
+    <img src="/images/trans.png" alt="Transaction">
+    </div>
+  </body>
+</html>
+a

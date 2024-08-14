@@ -1,0 +1,25 @@
+<header class="header">
+  <a href="" class="logo">The FinTracker</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    {{#if username}}
+      <li><a href="/home">Home</a></li>
+      <li><a href="/addtransaction">Transactions</a></li>
+      {{! <li><a href="/viewtransaction">Display Data</a></li> }}
+      <li><a href="/transactions">More Features</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="">Current Balance: ${{user.balance}}</a></li>
+      <li><a href="#">{{username}}</a></li>
+    {{else}}
+      <li><a href="/index">Home</a></li>
+      <li><a href="/login">Transactions</a></li>
+      {{! <li><a href="/viewtransaction">Display Data</a></li> }}
+      <li><a href="/login">More Features</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="/login">SignIn/SignUp</a></li>
+    {{/if}}
+  </ul>
+</header>

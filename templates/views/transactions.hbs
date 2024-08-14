@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions</title>
+    <link rel="stylesheet" href="css/transactionspage.css">
+    
+    <script>
+        // Implement the onclick function for the buttons
+        function gotoadd(){
+            window.location.href = "addtransaction";
+        }
+        function gotodel(){
+            window.location.href = "deltransaction";
+        }
+        function gotoupdt(){
+            window.location.href = "updttransaction";
+        }
+        function gotoview(){
+            window.location.href = "viewtransaction";
+        }
+
+    </script>
+  </head>
+
+  <body>
+    <!-- Create a form with 4 button having name Add Transaction , delete transactio, update transaction, view transaction -->
+    <div class="container">
+        <h1>What you want to do?</h1>
+        <button name="add" onclick="gotoadd()">Add Transaction</button>
+        <button name="delete" onclick="gotodel()">Delete Transaction</button>
+        <button name="update" onclick="gotoupdt()">Update Transaction</button>
+        <button name="view" onclick="gotoview()">View Transaction</button>
+    </div>
+  </body>
+</html>

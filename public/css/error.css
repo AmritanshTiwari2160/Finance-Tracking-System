@@ -1,0 +1,9 @@
+/* style the body of the page with a error 404 not found image background */
+
+* {
+    background-image: url("/res/images/error.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
