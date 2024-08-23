@@ -4,7 +4,7 @@
 
 ## Demonstration
 
-![Video Title](./TheFinTrackersVideo.mp4)
+![Demonstration](./TheFinTrackersVideo.mp4)
 
 ## Features:
 
