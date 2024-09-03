@@ -1,6 +1,6 @@
-# FinTrackers
+# Finance Tracking System
 
-**FinTrackers** is a web-based application designed to help users manage their transactions and expenses effectively. It provides a range of features and functionalities to track and organize financial data. The main goal of FinTrackers is to assist users in maintaining financial records and achieving their financial goals. The application offers an intuitive interface for adding new transactions and updating existing ones. Users can easily record their income and expenses, making it convenient to track their financial activities.
+It is a web-based application designed to help users manage their transactions and expenses effectively. It provides a range of features and functionalities to track and organize financial data. The main goal of FinTrackers is to assist users in maintaining financial records and achieving their financial goals. The application offers an intuitive interface for adding new transactions and updating existing ones. Users can easily record their income and expenses, making it convenient to track their financial activities.
 
 ## Features:
 
